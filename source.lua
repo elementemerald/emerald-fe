@@ -223,7 +223,7 @@ TextBox.FocusLost:connect(function(enterPressed)
 				if not mouse.Target then return end
 				plr.Character:MoveTo(mouse.Hit.p)
 			end)
-		elseif string.sub(TextBox.Text, 1, 6) == ("disablectrltp") then
+		elseif string.sub(TextBox.Text, 1, 13) == ("disablectrltp") then
 			ctrl = false
 		elseif string.sub(TextBox.Text, 1, 5) == ("goto ") then
 			for i,v in pairs(GetPlayer(string.sub(TextBox.Text, 6))) do
