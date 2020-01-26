@@ -1,3 +1,7 @@
+--[[
+    Emerald FE Admin
+    Beta Version v1.0.3a
+]]
 local plr = game.Players.LocalPlayer
 local mouse = plr:GetMouse()
 local sgui = game:GetService("StarterGui")
