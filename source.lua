@@ -1,3 +1,7 @@
+--[[
+    Emerald FE Admin
+    Beta Version v1.0.3a
+]]
 local plr = game.Players.LocalPlayer
 local mouse = plr:GetMouse()
 local sgui = game:GetService("StarterGui")
@@ -237,6 +241,8 @@ TextBox.FocusLost:connect(function(enterPressed)
             game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Head
 		elseif string.sub(TextBox.Text, 1, 3) == ("ws ") then
             game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (string.sub(TextBox.Text, 4))
+		elseif string.sub(TextBox.Text, 1, 3) == ("jp ") then
+		   game.Players.LocalPlayer.Character.Humanoid.JumpPower = (string.sub(TextBox.Text, 4))
 		end
 		TextBox.Text = ""
 		Frame:TweenPosition(UDim2.new(0.782, 0, 1, 0), "InOut", "Quad", 1, true)
